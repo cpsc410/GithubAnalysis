@@ -1,0 +1,183 @@
+Number of commits for each author: 
+    22	Ben Henaghan (psybth)
+    11	UBC Student
+    10	Ceylin Ozdemir
+     7	Cyrielle Meyrueix
+     5	q6y0b
+
+Author: Ben
+Number of lines
+Added | Deleted | File  Modified
+1	1	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+38	0	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+110	8	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+8	98	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+13	39	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+11	0	cpsc410_ctrl_alt_elite/.idea/cpsc410_ctrl_alt_elite.iml
+8	0	cpsc410_ctrl_alt_elite/.idea/modules.xml
+0	0	cpsc410_ctrl_alt_elite/gifOutput
+10	1	cpsc410_ctrl_alt_elite/input.txt
+194	0	cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
+100	0	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+40	1	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+5	1	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+3	0	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+1	0	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+Total:
+1611 859
+
+List of unique files modified by Ben: 
+cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+cpsc410_ctrl_alt_elite/src/ast/GIF.java
+cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
+cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+
+Author: Ceylin
+Number of lines
+Added | Deleted | File  Modified
+1	1	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+38	0	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+110	8	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+8	98	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+13	39	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+11	0	cpsc410_ctrl_alt_elite/.idea/cpsc410_ctrl_alt_elite.iml
+8	0	cpsc410_ctrl_alt_elite/.idea/modules.xml
+0	0	cpsc410_ctrl_alt_elite/gifOutput
+10	1	cpsc410_ctrl_alt_elite/input.txt
+194	0	cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
+100	0	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+40	1	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+5	1	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+3	0	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+1	0	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+Total:
+499 116
+
+List of unique files modified by Ceylin: 
+cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+cpsc410_ctrl_alt_elite/src/ast/GIF.java
+cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
+cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+
+Author: Cyrielle
+Number of lines
+Added | Deleted | File  Modified
+1	1	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+38	0	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+110	8	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+8	98	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+13	39	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+11	0	cpsc410_ctrl_alt_elite/.idea/cpsc410_ctrl_alt_elite.iml
+8	0	cpsc410_ctrl_alt_elite/.idea/modules.xml
+0	0	cpsc410_ctrl_alt_elite/gifOutput
+10	1	cpsc410_ctrl_alt_elite/input.txt
+194	0	cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
+100	0	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+40	1	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+5	1	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+3	0	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+1	0	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+Total:
+775 343
+
+List of unique files modified by Cyrielle: 
+cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+cpsc410_ctrl_alt_elite/src/ast/GIF.java
+cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
+cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+
+Author: UBC
+Number of lines
+Added | Deleted | File  Modified
+1	1	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+38	0	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+110	8	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+8	98	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+13	39	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+11	0	cpsc410_ctrl_alt_elite/.idea/cpsc410_ctrl_alt_elite.iml
+8	0	cpsc410_ctrl_alt_elite/.idea/modules.xml
+0	0	cpsc410_ctrl_alt_elite/gifOutput
+10	1	cpsc410_ctrl_alt_elite/input.txt
+194	0	cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
+100	0	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+40	1	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+5	1	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+3	0	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+1	0	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+Total:
+149 75
+
+List of unique files modified by UBC: 
+cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+cpsc410_ctrl_alt_elite/src/ast/GIF.java
+cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
+cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+
+Author: q6y0b
+Number of lines
+Added | Deleted | File  Modified
+1	1	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+38	0	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+110	8	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+8	98	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+13	39	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+11	0	cpsc410_ctrl_alt_elite/.idea/cpsc410_ctrl_alt_elite.iml
+8	0	cpsc410_ctrl_alt_elite/.idea/modules.xml
+0	0	cpsc410_ctrl_alt_elite/gifOutput
+10	1	cpsc410_ctrl_alt_elite/input.txt
+194	0	cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
+100	0	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+40	1	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+5	1	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+3	0	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+1	0	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+Total:
+542 149
+
+List of unique files modified by q6y0b: 
+cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+cpsc410_ctrl_alt_elite/src/ast/GIF.java
+cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
+cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+
+All the code files: 
+./cpsc410_ctrl_alt_elite/src/GifsCollages/GifCreator.java
+./cpsc410_ctrl_alt_elite/src/mainrun/OpenCvTest.java
+./cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+./cpsc410_ctrl_alt_elite/src/libs/Node.java
+./cpsc410_ctrl_alt_elite/src/libs/NameCheckException.java
+./cpsc410_ctrl_alt_elite/src/libs/NoFileFoundException.java
+./cpsc410_ctrl_alt_elite/src/libs/Tokenizer.java
+./cpsc410_ctrl_alt_elite/src/libs/FilterNotFoundException.java
+./cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+./cpsc410_ctrl_alt_elite/src/ast/STATEMENT.java
+./cpsc410_ctrl_alt_elite/src/ast/GIF.java
+./cpsc410_ctrl_alt_elite/src/ast/PHOTOS.java
+./cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+./cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+./cpsc410_ctrl_alt_elite/src/ast/COPY.java
+./cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+./cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+./cpsc410_ctrl_alt_elite/src/filter/FilterTest.java
+./cpsc410_ctrl_alt_elite/src/filter/Blur.java
+./cpsc410_ctrl_alt_elite/src/filter/Contrast.java
+./cpsc410_ctrl_alt_elite/src/filter/Brighten.java
+./cpsc410_ctrl_alt_elite/src/filter/Darken.java
+./cpsc410_ctrl_alt_elite/src/filter/Invert.java
+./cpsc410_ctrl_alt_elite/src/filter/Filter.java
+./cpsc410_ctrl_alt_elite/src/filter/Sharpen.java
