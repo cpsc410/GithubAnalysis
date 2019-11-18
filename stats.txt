@@ -155,7 +155,7 @@ cpsc410_ctrl_alt_elite/src/ast/LOAD.java
 cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
 cpsc410_ctrl_alt_elite/src/mainrun/Main.java
 
-All the code files: 
+All the code files:
 ./cpsc410_ctrl_alt_elite/src/GifsCollages/GifCreator.java
 ./cpsc410_ctrl_alt_elite/src/mainrun/OpenCvTest.java
 ./cpsc410_ctrl_alt_elite/src/mainrun/Main.java
