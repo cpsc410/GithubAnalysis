@@ -1,3 +1,31 @@
+
+All the code files: 
+./cpsc410_ctrl_alt_elite/src/GifsCollages/GifCreator.java
+./cpsc410_ctrl_alt_elite/src/mainrun/OpenCvTest.java
+./cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+./cpsc410_ctrl_alt_elite/src/libs/Node.java
+./cpsc410_ctrl_alt_elite/src/libs/NameCheckException.java
+./cpsc410_ctrl_alt_elite/src/libs/NoFileFoundException.java
+./cpsc410_ctrl_alt_elite/src/libs/Tokenizer.java
+./cpsc410_ctrl_alt_elite/src/libs/FilterNotFoundException.java
+./cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+./cpsc410_ctrl_alt_elite/src/ast/STATEMENT.java
+./cpsc410_ctrl_alt_elite/src/ast/GIF.java
+./cpsc410_ctrl_alt_elite/src/ast/PHOTOS.java
+./cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+./cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+./cpsc410_ctrl_alt_elite/src/ast/COPY.java
+./cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+./cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+./cpsc410_ctrl_alt_elite/src/filter/FilterTest.java
+./cpsc410_ctrl_alt_elite/src/filter/Blur.java
+./cpsc410_ctrl_alt_elite/src/filter/Contrast.java
+./cpsc410_ctrl_alt_elite/src/filter/Brighten.java
+./cpsc410_ctrl_alt_elite/src/filter/Darken.java
+./cpsc410_ctrl_alt_elite/src/filter/Invert.java
+./cpsc410_ctrl_alt_elite/src/filter/Filter.java
+./cpsc410_ctrl_alt_elite/src/filter/Sharpen.java
+
 Number of commits for each author: 
     22	Ben Henaghan (psybth)
     11	UBC Student
@@ -8,122 +36,324 @@ Number of commits for each author:
 Author: Ben
 Number of lines
 Added | Deleted | File  Modified
+1	1	cpsc410_ctrl_alt_elite/src/libs/FilterNotFoundException.java
+1	1	cpsc410_ctrl_alt_elite/src/libs/NameCheckException.java
+1	1	cpsc410_ctrl_alt_elite/src/libs/NoFileFoundException.java
+1	2	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+1	1	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+55	27	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+2	2	cpsc410_ctrl_alt_elite/src/filter/Blur.java
+20	0	cpsc410_ctrl_alt_elite/src/filter/Brighten.java
+5	2	cpsc410_ctrl_alt_elite/src/filter/{Vignette.java => Contrast.java}
+20	0	cpsc410_ctrl_alt_elite/src/filter/Darken.java
+90	65	cpsc410_ctrl_alt_elite/src/filter/FilterTest.java
+20	0	cpsc410_ctrl_alt_elite/src/filter/Invert.java
+7	0	cpsc410_ctrl_alt_elite/src/libs/FilterNotFoundException.java
+5	4	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+25	25	cpsc410_ctrl_alt_elite/src/mainrun/OpenCvTest.java
+82	94	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
 1	1	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
-38	0	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
-110	8	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-8	98	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-13	39	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+4	7	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+8	14	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+60	41	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+5	4	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+18	15	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+26	1	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
 11	0	cpsc410_ctrl_alt_elite/.idea/cpsc410_ctrl_alt_elite.iml
 8	0	cpsc410_ctrl_alt_elite/.idea/modules.xml
 0	0	cpsc410_ctrl_alt_elite/gifOutput
-10	1	cpsc410_ctrl_alt_elite/input.txt
-194	0	cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
-100	0	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-40	1	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+1	1	cpsc410_ctrl_alt_elite/input.txt
+196	0	cpsc410_ctrl_alt_elite/src/GifsCollages/GifCreator.java
+107	2	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+54	2	cpsc410_ctrl_alt_elite/src/ast/GIF.java
 5	1	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
 3	0	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
 1	0	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+0	11	cpsc410_ctrl_alt_elite/.idea/cpsc410_ctrl_alt_elite.iml
+0	8	cpsc410_ctrl_alt_elite/.idea/modules.xml
+0	0	cpsc410_ctrl_alt_elite/gifOutput
+1	1	cpsc410_ctrl_alt_elite/input.txt
+0	196	cpsc410_ctrl_alt_elite/src/GifsCollages/GifCreator.java
+2	107	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+2	54	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+1	5	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+0	3	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+0	1	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+6	6	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+2	2	cpsc410_ctrl_alt_elite/src/filter/Blur.java
+0	20	cpsc410_ctrl_alt_elite/src/filter/Brighten.java
+0	20	cpsc410_ctrl_alt_elite/src/filter/Darken.java
+0	25	cpsc410_ctrl_alt_elite/src/filter/FilterTest.java
+0	20	cpsc410_ctrl_alt_elite/src/filter/Invert.java
+2	5	cpsc410_ctrl_alt_elite/src/filter/{Contrast.java => Vignette.java}
+6	6	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+2	2	cpsc410_ctrl_alt_elite/src/filter/Blur.java
+20	0	cpsc410_ctrl_alt_elite/src/filter/Brighten.java
+5	2	cpsc410_ctrl_alt_elite/src/filter/{Vignette.java => Contrast.java}
+20	0	cpsc410_ctrl_alt_elite/src/filter/Darken.java
+25	0	cpsc410_ctrl_alt_elite/src/filter/FilterTest.java
+20	0	cpsc410_ctrl_alt_elite/src/filter/Invert.java
+1	0	cpsc410_ctrl_alt_elite/.idea/compiler.xml
+33	8	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+24	3	cpsc410_ctrl_alt_elite/src/filter/FilterTest.java
+25	0	cpsc410_ctrl_alt_elite/src/filter/Sharpen.java
+27	1	cpsc410_ctrl_alt_elite/src/filter/Blur.java
+8	0	cpsc410_ctrl_alt_elite/src/filter/Filter.java
+44	0	cpsc410_ctrl_alt_elite/src/filter/FilterTest.java
+5	0	cpsc410_ctrl_alt_elite/src/filter/Vignette.java
+1	1	cpsc410_ctrl_alt_elite/src/filter/Blur.java
+1	1	cpsc410_ctrl_alt_elite/src/filter/Filter.java
+1	1	cpsc410_ctrl_alt_elite/src/filter/Vignette.java
+5	6	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+25	25	cpsc410_ctrl_alt_elite/src/mainrun/OpenCvTest.java
+0	0	cpsc410_ctrl_alt_elite/src/{main/java/language => }/filter/Blur.java
+0	0	cpsc410_ctrl_alt_elite/src/{main/java/language => }/filter/Filter.java
+0	0	cpsc410_ctrl_alt_elite/src/{main/java/language => }/filter/Vignette.java
+1	0	cpsc410_ctrl_alt_elite/.idea/.name
+10	0	cpsc410_ctrl_alt_elite/src/main/java/language/filter/Blur.java
+7	0	cpsc410_ctrl_alt_elite/src/main/java/language/filter/Filter.java
+10	0	cpsc410_ctrl_alt_elite/src/main/java/language/filter/Vignette.java
+8	0	cpsc410_ctrl_alt_elite/.idea/compiler.xml
+6	0	cpsc410_ctrl_alt_elite/.idea/vcs.xml
+16	0	cpsc410_ctrl_alt_elite/src/main/java/run/Main.java
+25	0	cpsc410_ctrl_alt_elite/src/main/java/run/OpenCvTest.java
+0	5	cpsc410_ctrl_alt_elite/src/main/java/test/OpenCvTest.java
+4	0	README.md
+68	0	cpsc410_ctrl_alt_elite/.gitignore
+0	0	cpsc410_ctrl_alt_elite/.gradle/4.10/gc.properties
+2	0	cpsc410_ctrl_alt_elite/.gradle/buildOutputCleanup/cache.properties
+0	0	cpsc410_ctrl_alt_elite/.gradle/vcs-1/gc.properties
+4	0	cpsc410_ctrl_alt_elite/.idea/encodings.xml
+7	0	cpsc410_ctrl_alt_elite/.idea/misc.xml
+16	0	cpsc410_ctrl_alt_elite/build.gradle
+6	0	cpsc410_ctrl_alt_elite/gradle/wrapper/gradle-wrapper.properties
+172	0	cpsc410_ctrl_alt_elite/gradlew
+84	0	cpsc410_ctrl_alt_elite/gradlew.bat
+2	0	cpsc410_ctrl_alt_elite/settings.gradle
+5	0	cpsc410_ctrl_alt_elite/src/main/java/test/OpenCvTest.java
 Total:
 1611 859
 
 List of unique files modified by Ben: 
-cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+cpsc410_ctrl_alt_elite/src/libs/FilterNotFoundException.java
+cpsc410_ctrl_alt_elite/src/libs/NameCheckException.java
+cpsc410_ctrl_alt_elite/src/libs/NoFileFoundException.java
+cpsc410_ctrl_alt_elite/src/ast/FILTER.java
 cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+cpsc410_ctrl_alt_elite/src/filter/Blur.java
+cpsc410_ctrl_alt_elite/src/filter/Brighten.java
+cpsc410_ctrl_alt_elite/src/filter/{Vignette.java
+cpsc410_ctrl_alt_elite/src/filter/Darken.java
+cpsc410_ctrl_alt_elite/src/filter/FilterTest.java
+cpsc410_ctrl_alt_elite/src/filter/Invert.java
+cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+cpsc410_ctrl_alt_elite/src/mainrun/OpenCvTest.java
+cpsc410_ctrl_alt_elite/src/ast/SAVE.java
 cpsc410_ctrl_alt_elite/src/ast/GIF.java
-cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
+cpsc410_ctrl_alt_elite/src/GifsCollages/GifCreator.java
 cpsc410_ctrl_alt_elite/src/ast/LOAD.java
 cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
-cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+cpsc410_ctrl_alt_elite/src/filter/{Contrast.java
+cpsc410_ctrl_alt_elite/src/filter/Sharpen.java
+cpsc410_ctrl_alt_elite/src/filter/Filter.java
+cpsc410_ctrl_alt_elite/src/filter/Vignette.java
+}/filter/Blur.java
+}/filter/Filter.java
+}/filter/Vignette.java
+cpsc410_ctrl_alt_elite/src/main/java/language/filter/Blur.java
+cpsc410_ctrl_alt_elite/src/main/java/language/filter/Filter.java
+cpsc410_ctrl_alt_elite/src/main/java/language/filter/Vignette.java
+cpsc410_ctrl_alt_elite/src/main/java/run/Main.java
+cpsc410_ctrl_alt_elite/src/main/java/run/OpenCvTest.java
+cpsc410_ctrl_alt_elite/src/main/java/test/OpenCvTest.java
 
 Author: Ceylin
 Number of lines
 Added | Deleted | File  Modified
-1	1	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
-38	0	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
-110	8	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-8	98	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-13	39	cpsc410_ctrl_alt_elite/src/ast/GIF.java
-11	0	cpsc410_ctrl_alt_elite/.idea/cpsc410_ctrl_alt_elite.iml
-8	0	cpsc410_ctrl_alt_elite/.idea/modules.xml
-0	0	cpsc410_ctrl_alt_elite/gifOutput
-10	1	cpsc410_ctrl_alt_elite/input.txt
-194	0	cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
-100	0	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-40	1	cpsc410_ctrl_alt_elite/src/ast/GIF.java
-5	1	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+45	0	cpsc410_ctrl_alt_elite/src/ast/COPY.java
 3	0	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+1	1	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+4	4	cpsc410_ctrl_alt_elite/input.txt
+2	1	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+2	1	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+2	1	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+62	32	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+7	0	cpsc410_ctrl_alt_elite/src/libs/NameCheckException.java
+7	0	cpsc410_ctrl_alt_elite/src/libs/NoFileFoundException.java
+9	0	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+7	1	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+7	0	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+0	1	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+7	1	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
 1	0	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+1	1	.idea/misc.xml
+5	0	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+5	0	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+5	0	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+46	0	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+5	0	cpsc410_ctrl_alt_elite/src/ast/PHOTOS.java
+6	0	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+5	0	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+1	2	cpsc410_ctrl_alt_elite/src/libs/Node.java
+3	0	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+1	1	.idea/misc.xml
+5	5	cpsc410_ctrl_alt_elite/input.txt
+13	0	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+3	1	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+0	10	cpsc410_ctrl_alt_elite/src/filter/Blur.java
+0	7	cpsc410_ctrl_alt_elite/src/filter/Filter.java
+0	10	cpsc410_ctrl_alt_elite/src/filter/Vignette.java
+7	2	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+5	5	cpsc410_ctrl_alt_elite/input.txt
+1	1	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+3	0	.idea/.gitignore
+0	0	.idea/{CPSC410DSLV2.iml => CPSC410DSL.iml}
+6	0	.idea/compiler.xml
+6	0	.idea/misc.xml
+1	1	.idea/modules.xml
+2	2	cpsc410_ctrl_alt_elite/input.txt
+19	1	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+19	0	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+2	1	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+0	23	.gitignore
+9	0	LanguageDesign/Changes.txt
+11	0	LanguageDesign/Grammar.txt
+10	0	LanguageDesign/UserReview1.txt
+16	0	LanguageDesign/UserReview2.txt
+0	0	cpsc410_ctrl_alt_elite/libs/Node.java
+0	0	cpsc410_ctrl_alt_elite/libs/Tokenizer.java
+53	0	LanguageDesign/SecondaryDesign.md
+59	0	LanguageDesign/InitialDesign.md
 Total:
 499 116
 
 List of unique files modified by Ceylin: 
-cpsc410_ctrl_alt_elite/src/ast/SAVE.java
-cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-cpsc410_ctrl_alt_elite/src/ast/GIF.java
-cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
-cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+cpsc410_ctrl_alt_elite/src/ast/COPY.java
 cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
 cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+cpsc410_ctrl_alt_elite/src/ast/GIF.java
+cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+cpsc410_ctrl_alt_elite/src/libs/NameCheckException.java
+cpsc410_ctrl_alt_elite/src/libs/NoFileFoundException.java
+cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+cpsc410_ctrl_alt_elite/src/ast/PHOTOS.java
+cpsc410_ctrl_alt_elite/src/libs/Node.java
+cpsc410_ctrl_alt_elite/src/filter/Blur.java
+cpsc410_ctrl_alt_elite/src/filter/Filter.java
+cpsc410_ctrl_alt_elite/src/filter/Vignette.java
+cpsc410_ctrl_alt_elite/libs/Node.java
+cpsc410_ctrl_alt_elite/libs/Tokenizer.java
 
 Author: Cyrielle
 Number of lines
 Added | Deleted | File  Modified
-1	1	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
-38	0	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
-110	8	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-8	98	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-13	39	cpsc410_ctrl_alt_elite/src/ast/GIF.java
-11	0	cpsc410_ctrl_alt_elite/.idea/cpsc410_ctrl_alt_elite.iml
-8	0	cpsc410_ctrl_alt_elite/.idea/modules.xml
-0	0	cpsc410_ctrl_alt_elite/gifOutput
-10	1	cpsc410_ctrl_alt_elite/input.txt
-194	0	cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
-100	0	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-40	1	cpsc410_ctrl_alt_elite/src/ast/GIF.java
-5	1	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
-3	0	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
-1	0	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+25	25	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+36	36	cpsc410_ctrl_alt_elite/src/filter/Blur.java
+15	15	cpsc410_ctrl_alt_elite/src/filter/Filter.java
+65	65	cpsc410_ctrl_alt_elite/src/filter/FilterTest.java
+25	25	cpsc410_ctrl_alt_elite/src/filter/Sharpen.java
+15	15	cpsc410_ctrl_alt_elite/src/filter/Vignette.java
+4	5	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+25	25	cpsc410_ctrl_alt_elite/src/mainrun/OpenCvTest.java
+1	1	.idea/misc.xml
+6	0	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+5	0	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+0	5	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+2	2	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+2	0	cpsc410_ctrl_alt_elite/src/{Gifs&Collages => GifsCollages}/GifCreator.java
+18	13	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+40	27	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+0	6	.idea/compiler.xml
+1	1	.idea/misc.xml
+5	5	cpsc410_ctrl_alt_elite/input.txt
+4	2	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+5	3	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+4	2	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+4	2	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+6	4	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+3	3	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+13	1	.idea/CPSC410DSLV2.iml
+5	0	cpsc410_ctrl_alt_elite/input.txt
+36	1	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+17	0	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+39	1	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+31	0	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+14	1	cpsc410_ctrl_alt_elite/src/ast/PHOTOS.java
+2	2	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+14	1	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+3	2	cpsc410_ctrl_alt_elite/src/libs/Tokenizer.java
+0	19	cpsc410_ctrl_alt_elite/src/main/java/run/Main.java
+0	25	cpsc410_ctrl_alt_elite/src/main/java/run/OpenCvTest.java
+26	0	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+25	0	cpsc410_ctrl_alt_elite/src/mainrun/OpenCvTest.java
+9	0	.idea/CPSC410DSLV2.iml
+5	0	.idea/codeStyles/codeStyleConfig.xml
+8	0	.idea/modules.xml
+6	0	.idea/vcs.xml
+0	0	cpsc410_ctrl_alt_elite/libs/Node.java
+0	0	cpsc410_ctrl_alt_elite/libs/Tokenizer.java
+2	1	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+42	1	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+22	0	cpsc410_ctrl_alt_elite/src/libs/Node.java
+122	0	cpsc410_ctrl_alt_elite/src/libs/Tokenizer.java
+4	1	cpsc410_ctrl_alt_elite/src/main/java/run/Main.java
+1	0	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+2	0	cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+1	0	cpsc410_ctrl_alt_elite/src/ast/GIF.java
+1	0	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+1	0	cpsc410_ctrl_alt_elite/src/ast/PHOTOS.java
+1	0	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+1	0	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+6	0	cpsc410_ctrl_alt_elite/src/ast/STATEMENT.java
 Total:
 775 343
 
 List of unique files modified by Cyrielle: 
-cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+cpsc410_ctrl_alt_elite/src/filter/Blur.java
+cpsc410_ctrl_alt_elite/src/filter/Filter.java
+cpsc410_ctrl_alt_elite/src/filter/FilterTest.java
+cpsc410_ctrl_alt_elite/src/filter/Sharpen.java
+cpsc410_ctrl_alt_elite/src/filter/Vignette.java
+cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+cpsc410_ctrl_alt_elite/src/mainrun/OpenCvTest.java
 cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
 cpsc410_ctrl_alt_elite/src/ast/GIF.java
-cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
 cpsc410_ctrl_alt_elite/src/ast/LOAD.java
 cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
-cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+GifsCollages}/GifCreator.java
+cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+cpsc410_ctrl_alt_elite/src/ast/PHOTOS.java
+cpsc410_ctrl_alt_elite/src/libs/Tokenizer.java
+cpsc410_ctrl_alt_elite/src/main/java/run/Main.java
+cpsc410_ctrl_alt_elite/src/main/java/run/OpenCvTest.java
+cpsc410_ctrl_alt_elite/libs/Node.java
+cpsc410_ctrl_alt_elite/libs/Tokenizer.java
+cpsc410_ctrl_alt_elite/src/libs/Node.java
+cpsc410_ctrl_alt_elite/src/ast/STATEMENT.java
 
 Author: UBC
 Number of lines
 Added | Deleted | File  Modified
-1	1	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
-38	0	cpsc410_ctrl_alt_elite/src/ast/SAVE.java
-110	8	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-8	98	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-13	39	cpsc410_ctrl_alt_elite/src/ast/GIF.java
-11	0	cpsc410_ctrl_alt_elite/.idea/cpsc410_ctrl_alt_elite.iml
-8	0	cpsc410_ctrl_alt_elite/.idea/modules.xml
-0	0	cpsc410_ctrl_alt_elite/gifOutput
-10	1	cpsc410_ctrl_alt_elite/input.txt
-194	0	cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
-100	0	cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-40	1	cpsc410_ctrl_alt_elite/src/ast/GIF.java
-5	1	cpsc410_ctrl_alt_elite/src/ast/LOAD.java
-3	0	cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
-1	0	cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+6	6	README.md
+1	1	README.md
+6	4	README.md
+2	2	README.md
+11	21	README.md
+2	2	README.md
+14	9	README.md
+9	3	README.md
+2	27	README.md
+71	0	README.md
+23	0	.gitignore
+2	0	README.md
 Total:
 149 75
 
 List of unique files modified by UBC: 
-cpsc410_ctrl_alt_elite/src/ast/SAVE.java
-cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-cpsc410_ctrl_alt_elite/src/ast/GIF.java
-cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
-cpsc410_ctrl_alt_elite/src/ast/LOAD.java
-cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
-cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+
 
 Author: q6y0b
 Number of lines
@@ -154,30 +384,3 @@ cpsc410_ctrl_alt_elite/src/Gifs&Collages/GifCreator.java
 cpsc410_ctrl_alt_elite/src/ast/LOAD.java
 cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
 cpsc410_ctrl_alt_elite/src/mainrun/Main.java
-
-All the code files:
-./cpsc410_ctrl_alt_elite/src/GifsCollages/GifCreator.java
-./cpsc410_ctrl_alt_elite/src/mainrun/OpenCvTest.java
-./cpsc410_ctrl_alt_elite/src/mainrun/Main.java
-./cpsc410_ctrl_alt_elite/src/libs/Node.java
-./cpsc410_ctrl_alt_elite/src/libs/NameCheckException.java
-./cpsc410_ctrl_alt_elite/src/libs/NoFileFoundException.java
-./cpsc410_ctrl_alt_elite/src/libs/Tokenizer.java
-./cpsc410_ctrl_alt_elite/src/libs/FilterNotFoundException.java
-./cpsc410_ctrl_alt_elite/src/ast/LOAD.java
-./cpsc410_ctrl_alt_elite/src/ast/STATEMENT.java
-./cpsc410_ctrl_alt_elite/src/ast/GIF.java
-./cpsc410_ctrl_alt_elite/src/ast/PHOTOS.java
-./cpsc410_ctrl_alt_elite/src/ast/SAVE.java
-./cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
-./cpsc410_ctrl_alt_elite/src/ast/COPY.java
-./cpsc410_ctrl_alt_elite/src/ast/FILTER.java
-./cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-./cpsc410_ctrl_alt_elite/src/filter/FilterTest.java
-./cpsc410_ctrl_alt_elite/src/filter/Blur.java
-./cpsc410_ctrl_alt_elite/src/filter/Contrast.java
-./cpsc410_ctrl_alt_elite/src/filter/Brighten.java
-./cpsc410_ctrl_alt_elite/src/filter/Darken.java
-./cpsc410_ctrl_alt_elite/src/filter/Invert.java
-./cpsc410_ctrl_alt_elite/src/filter/Filter.java
-./cpsc410_ctrl_alt_elite/src/filter/Sharpen.java
