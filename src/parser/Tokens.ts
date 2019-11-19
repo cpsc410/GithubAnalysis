@@ -1,20 +1,31 @@
 export default class Tokens {
-    public static MAKE = "make";
+    public static ALL = "All";
 
-    public static ME = "me";
+    public static THE = "the";
 
-    public static A = "a";
+    public static CODE = "code";
 
-    public static CALLED = "called";
+    public static FILES = "files:";
 
-    public static PLEASE = "please";
+    // public static SEMI = ":";
 
-    public static CONNECT = "connect";
+    public static  IDENTIFIER = "([_A-Za-z]+([A-Za-z0-9]*))+";
 
-    public static TO = "to";
+    public static NUMBER = "Number";
 
-    public static IDENTIFIER = "[_A-Za-z]+([A-Za-z0-9]*)";
+    public static OF = "of";
 
-    public static SHAPE = "circle|square";
+    public static COMMITS = "commits";
+
+    public static FOR = "for";
+
+    public static EACH = "each";
+
+    public static AUTHOR = "Author:";
+
+    public static TOTAL = "Total:";
+
+    public static LIST = "list";
+
 }
 

@@ -24,7 +24,7 @@ export default class Tokenizer {
     }
 
     private tokenize() {
-        this.tokens = this.program.split('\n').join(' NEW_LINE ').match(/\S+/g) || [];
+        this.tokens = this.program.split('\n\n').join(' NEW_LINE ').match(/\S+/g) || [];
         this.currentTokenIdx = 0;
         this.line = 1;
         this.column = 0;

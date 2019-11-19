@@ -12,25 +12,25 @@ describe('DSL should be able to parse', () => {
 
     });
 
-    it('should parse a valid input', async () => {
-        let dotProgram = new DotProgram("valid/sample.tdot");
+    it('should parse file valid input', async () => {
+        let dotProgram = new DotProgram("valid/stats.txt");
         let output = dotProgram.parse();
         expect(output.status).to.be.equal(ProgramOutputStatus.SUCCESS)
     });
 
-    it('should parse a valid simple input', async () => {
+    it('should parse file valid simple input', async () => {
         let dotProgram = new DotProgram("valid/simple.tdot");
         let output = dotProgram.parse();
         expect(output.status).to.be.equal(ProgramOutputStatus.SUCCESS)
     });
 
-    it('should not parse a non existing file', async () => {
+    it('should not parse file non existing file', async () => {
         let dotProgram = new DotProgram("sample.tdot");
         let output = dotProgram.parse();
         expect(output.status).to.be.equal(ProgramOutputStatus.ERROR)
     });
 
-    it('should not parse a valid input', async () => {
+    it('should not parse file valid input', async () => {
         const invalidInputs = [
             "invalid/non.valid.shape.tdot",
             "invalid/incomplete.shape.missing.shape.tdot",

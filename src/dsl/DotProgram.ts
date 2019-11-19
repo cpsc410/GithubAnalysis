@@ -3,11 +3,11 @@ import ProgramOutput from "./ProgramOutput";
 import {ProgramOutputStatus} from "./ProgramOutput";
 import Tokenizer from "../parser/Tokenizer";
 import {Node} from "../parser/Node";
-import DigraphNode from "../parser/DigraphNode";
+// import DigraphNode from "../parser/DigraphNode";
 import SymbolTable from "../parser/SymbolTable";
-import AstVisitor from "../ast/AstVisitor";
 import * as fs from "fs";
 import * as path from "path";
+import MainNode from "../parser/MainNode";
 
 export class DotProgram implements IProgram {
 
@@ -22,15 +22,17 @@ export class DotProgram implements IProgram {
     public parse(): ProgramOutput {
         try {
             let ctx = new Tokenizer(this.source);
-            let node = new DigraphNode();
-            node.parse(ctx);
+            let node = new MainNode();
+            this.symbolTable = new SymbolTable();
+            node.parse(ctx, this.symbolTable);
+            // @ts-ignore
             this.ast = node.root();
 
-            this.symbolTable = new SymbolTable();
+            // this.symbolTable = new SymbolTable();
 
-            let visitor = new AstVisitor(this.ast);
-            visitor.addListener(this.symbolTable);
-            visitor.traverse();
+            // let visitor = new AstVisitor(this.ast);
+            // visitor.addListener(this.symbolTable);
+            // visitor.traverse();
 
             return new ProgramOutput(ProgramOutputStatus.SUCCESS, this.ast, this.symbolTable, []);
         } catch (err) {
@@ -49,7 +51,7 @@ export class DotProgram implements IProgram {
                 });
                 return parseOutput;
             }
-            let visitor = new AstVisitor(this.ast);
+            // let visitor = new AstVisitor(this.ast);
 
             // let missingDeclarationListener = new MissingDeclarationListener(this.symbolTable);
             // let redeclarationListener = new RedeclarationListener(this.symbolTable);
@@ -58,8 +60,8 @@ export class DotProgram implements IProgram {
             // visitor.addListener(redeclarationListener);
             // visitor.traverse();
 
-            this.ast.setTargetPath(this.targetPath());
-            this.ast.compile();
+            // this.ast.setTargetPath(this.targetPath());
+            // this.ast.compile();
 
             let output = new ProgramOutput(ProgramOutputStatus.SUCCESS, this.ast, this.symbolTable, []);
             // this.checkCompileErrors(output, missingDeclarationListener);

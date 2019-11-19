@@ -8,13 +8,13 @@ import ShapeNode from "../../src/parser/ShapeNode";
 
 const expect = chai.expect;
 
-describe('DSL should have a symbol table', () => {
+describe('DSL should have file symbol table', () => {
 
     before(() => {
 
     });
 
-    it('should parse a valid input', async () => {
+    it('should parse file valid input', async () => {
         let dotProgram = new DotProgram("valid/sample.tdot");
         let output = dotProgram.parse();
         expect(output.status).to.be.equal(ProgramOutputStatus.SUCCESS);
