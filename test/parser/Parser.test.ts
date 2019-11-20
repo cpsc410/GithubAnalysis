@@ -2,11 +2,12 @@ import * as chai from 'chai';
 import {DotProgram} from '../../src/dsl/DotProgram';
 
 import {ProgramOutputStatus} from '../../src/dsl/ProgramOutput';
+import forEach = require("core-js/fn/array/for-each");
 
 
 const expect = chai.expect;
 
-describe('DSL should be able to parse', () => {
+describe('Should be able to parse the GitHub stats', () => {
 
     before(() => {
 
@@ -15,12 +16,18 @@ describe('DSL should be able to parse', () => {
     it('should parse file valid input', async () => {
         let dotProgram = new DotProgram("valid/stats.txt");
         let output = dotProgram.parse();
+        // console.log(output);
+        output.symbolTable.table.forEach((value: Map<string, number>, key: string) => {
+            console.log(key, value);
+        });
+
         expect(output.status).to.be.equal(ProgramOutputStatus.SUCCESS)
     });
 
     it('should parse file valid simple input', async () => {
-        let dotProgram = new DotProgram("valid/simple.tdot");
+        let dotProgram = new DotProgram("valid/stats.txt");
         let output = dotProgram.parse();
+        let consoleout = dotProgram.compile();
         expect(output.status).to.be.equal(ProgramOutputStatus.SUCCESS)
     });
 

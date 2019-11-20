@@ -3,9 +3,7 @@ import ProgramOutput from "./ProgramOutput";
 import {ProgramOutputStatus} from "./ProgramOutput";
 import Tokenizer from "../parser/Tokenizer";
 import {Node} from "../parser/Node";
-// import DigraphNode from "../parser/DigraphNode";
 import SymbolTable from "../parser/SymbolTable";
-import * as fs from "fs";
 import * as path from "path";
 import MainNode from "../parser/MainNode";
 
@@ -51,6 +49,7 @@ export class DotProgram implements IProgram {
                 });
                 return parseOutput;
             }
+            this.ast.compile(this.symbolTable);
             // let visitor = new AstVisitor(this.ast);
 
             // let missingDeclarationListener = new MissingDeclarationListener(this.symbolTable);

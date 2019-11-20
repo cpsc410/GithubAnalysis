@@ -4,7 +4,6 @@ import {ParserError} from '../errors/ParserError';
 import Tokens from "./Tokens";
 import FileName from "../ast/FileName";
 import SymbolTable from "./SymbolTable";
-import MainNode from "./MainNode";
 
 export default class FileNode extends Node {
 

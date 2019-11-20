@@ -7,7 +7,7 @@ export abstract class Node {
 
     protected children: Array<Node>;
 
-    abstract compile();
+    abstract compile(symbolTable: SymbolTable);
 
     abstract parse(context: Tokenizer, symbolTable: SymbolTable);
 

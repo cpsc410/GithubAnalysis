@@ -22,13 +22,11 @@ export default class MainNode extends Node {
                 case Tokens.ALL:
                     let fileNode = new FileNode();
                     fileNode.parse(context, symbolTable);
-                    // @ts-ignore
                     nodes.push(fileNode);
                     break;
                 case Tokens.AUTHOR:
                     let authorNode = new AuthorNode();
                     authorNode.parse(context, symbolTable);
-                    // @ts-ignore
                     nodes.push(authorNode);
                     break;
                 default:
@@ -37,8 +35,29 @@ export default class MainNode extends Node {
         }
     }
 
-    public compile() {
-//         try {
+    public compile(symbolTable: SymbolTable) {
+        type jsonType = {
+            name: string;
+            contributors: Map<string,number>;
+        }
+
+        let jsonList : [jsonType];
+        symbolTable.table.forEach((value: Map<string, number>, key: string) => {
+            console.log(key, value);
+            let json : jsonType = {
+                "name" : key,
+                "contributors" : value
+            };
+            console.log(json);
+            // jsonList.push(json);
+
+            // value.forEach((v: number, k: string) => {
+            //     console.log(k, v);
+            // });
+        });
+        // console.log(jsonList);
+//
+//      try {
 //             let file = this.target;
 //             let writer = OutputWriter.getInstance(file, 'utf-8');
 //
@@ -51,6 +70,7 @@ export default class MainNode extends Node {
 //         } catch (err) {
 //             throw new CompileError(err.message);
 //         }
+//         return jsonList;
     }
 
     public root(): Node {

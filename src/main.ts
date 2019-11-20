@@ -3,5 +3,5 @@ import MainNode from "./parser/MainNode";
 import {DotProgram} from "./dsl/DotProgram";
 
 
-let dotProgram = new DotProgram("sample.tdot");
+let dotProgram = new DotProgram("valid/stats.txt");
 dotProgram.compile();
