@@ -56,8 +56,5 @@ export default class FileNode extends Node {
         }
     }
 
-    public compile() {
-//         let writer = OutputWriter.getWriter();
-//         writer.write(this.edge.toDigraph());
-    }
+    public compile() {}
 }

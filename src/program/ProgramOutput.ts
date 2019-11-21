@@ -1,11 +1,9 @@
 import {Node} from "../parser/Node";
 import SymbolTable from "../parser/SymbolTable";
-import {ParserError} from '../errors/ParserError';
 
 export enum ProgramOutputStatus {
     SUCCESS,
     ERROR
-
 }
 
 export default class ProgramOutput {

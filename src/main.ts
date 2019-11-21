@@ -1,7 +1,8 @@
 import SymbolTable from "./parser/SymbolTable";
 import MainNode from "./parser/MainNode";
-import {DotProgram} from "./dsl/DotProgram";
+import {Program} from "./program/Program";
 
 
-let dotProgram = new DotProgram("valid/stats.txt");
-dotProgram.compile();
+let programInstance = new Program("valid/stats.txt");
+programInstance.parse();
+programInstance.compile();

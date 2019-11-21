@@ -2,7 +2,6 @@ import {Node} from "./Node";
 import Tokenizer from "../parser/Tokenizer";
 import {ParserError} from '../errors/ParserError';
 import Tokens from "./Tokens";
-import {OutputWriter} from "../dsl/OutputWriter";
 import Author from "../ast/Author";
 import MainNode from "./MainNode";
 import SymbolTable from "./SymbolTable";

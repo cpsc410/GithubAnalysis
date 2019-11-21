@@ -4,10 +4,9 @@ import {ProgramOutputStatus} from "./ProgramOutput";
 import Tokenizer from "../parser/Tokenizer";
 import {Node} from "../parser/Node";
 import SymbolTable from "../parser/SymbolTable";
-import * as path from "path";
 import MainNode from "../parser/MainNode";
 
-export class DotProgram implements IProgram {
+export class Program implements IProgram {
 
     source: string;
     ast: Node;
@@ -23,7 +22,6 @@ export class DotProgram implements IProgram {
             let node = new MainNode();
             this.symbolTable = new SymbolTable();
             node.parse(ctx, this.symbolTable);
-            // @ts-ignore
             this.ast = node.root();
 
             // this.symbolTable = new SymbolTable();
@@ -50,28 +48,8 @@ export class DotProgram implements IProgram {
                 return parseOutput;
             }
             this.ast.compile(this.symbolTable);
-            // let visitor = new AstVisitor(this.ast);
-
-            // let missingDeclarationListener = new MissingDeclarationListener(this.symbolTable);
-            // let redeclarationListener = new RedeclarationListener(this.symbolTable);
-            //
-            // visitor.addListener(missingDeclarationListener);
-            // visitor.addListener(redeclarationListener);
-            // visitor.traverse();
-
-            // this.ast.setTargetPath(this.targetPath());
-            // this.ast.compile();
 
             let output = new ProgramOutput(ProgramOutputStatus.SUCCESS, this.ast, this.symbolTable, []);
-            // this.checkCompileErrors(output, missingDeclarationListener);
-            // this.checkCompileErrors(output, redeclarationListener);
-
-            // for (compileError of compileErrorListeners) {
-            //     if (output.errors.length > 0) {
-            //         output.status = ProgramOutputStatus.ERROR;
-            //         output.errors = output.errors.concat(compileError.errors);
-            //     }
-            // }
 
             return output;
         } catch (err) {
@@ -79,16 +57,4 @@ export class DotProgram implements IProgram {
         }
     }
 
-    public targetPath(): string {
-        let mypath = this.source.split("/");
-        let program_name = mypath[mypath.length - 1].replace(".tdot", ".dot");
-        program_name = "target_" + program_name;
-
-        // if (mypath.slice(0, mypath.length - 1).length > 0) {
-        //     let prefix = mypath.slice(0, mypath.length - 1).join("/");
-        //     return path.join(__dirname, "../../resources/build", prefix, program_name);
-        // }
-
-        return path.join(__dirname, "../../resources/build", program_name);
-    }
 }

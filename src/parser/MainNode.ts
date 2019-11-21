@@ -37,40 +37,42 @@ export default class MainNode extends Node {
 
     public compile(symbolTable: SymbolTable) {
         type jsonType = {
-            name: string;
+            fileName: string;
             contributors: Map<string,number>;
+            topContributors: Array<string>;
         }
 
-        let jsonList : [jsonType];
+        let jsonList  = [];
         symbolTable.table.forEach((value: Map<string, number>, key: string) => {
-            console.log(key, value);
-            let json : jsonType = {
-                "name" : key,
-                "contributors" : value
-            };
-            console.log(json);
-            // jsonList.push(json);
+            // console.log(key, value);
 
-            // value.forEach((v: number, k: string) => {
-            //     console.log(k, v);
-            // });
+            let json : jsonType = {
+                fileName : key,
+                contributors : value,
+                topContributors : []
+            };
+
+            // Sorts key, value pairs based on the values in descending order
+            const sortDesFn = (a: [string, number], b: [string, number]) => {
+                return b[1] - a[1];
+            };
+
+            // Outputs the sorted key, value pairs
+            let sortedContributors = Array.from(json.contributors.entries()).sort(sortDesFn);
+
+            // Adds the names of the sorted authors in topContributors list
+            sortedContributors.forEach((value:[string, number]) => {
+                json.topContributors.push(value[0]);
+
+            });
+
+            // console.log(json);
+            jsonList.push(json);
         });
-        // console.log(jsonList);
-//
-//      try {
-//             let file = this.target;
-//             let writer = OutputWriter.getInstance(file, 'utf-8');
-//
-//             writer.write("digraph G {\n");
-//             this.children.forEach((node) => {
-//                 node.compile()
-//             });
-//             writer.write("}");
-//             writer.flush();
-//         } catch (err) {
-//             throw new CompileError(err.message);
-//         }
-//         return jsonList;
+
+        console.log(jsonList);
+        return jsonList;
+
     }
 
     public root(): Node {
