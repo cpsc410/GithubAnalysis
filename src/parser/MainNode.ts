@@ -5,6 +5,7 @@ import FileNode from "./FileNode";
 import AuthorNode from "./AuthorNode";
 import SymbolTable from "./SymbolTable";
 import {Node} from "./Node";
+import * as fs from "fs";
 
 export default class MainNode extends Node {
 
@@ -71,6 +72,13 @@ export default class MainNode extends Node {
         });
 
         console.log(jsonList);
+
+        fs.writeFile ("resources/output/out.json", JSON.stringify(jsonList), function(err) {
+                if (err) throw err;
+                console.log('\nThe list of all json objects has been saved in resources/output folder!');
+            }
+        );
+
         return jsonList;
 
     }

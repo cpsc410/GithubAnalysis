@@ -2,7 +2,7 @@ import * as chai from 'chai';
 import {Program} from '../../src/program/Program';
 
 import {ProgramOutputStatus} from '../../src/program/ProgramOutput';
-import forEach = require("core-js/fn/array/for-each");
+
 
 
 const expect = chai.expect;
