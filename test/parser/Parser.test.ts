@@ -14,7 +14,7 @@ describe('Should be able to parse the GitHub stats', () => {
     });
 
     it('should parse file valid input', async () => {
-        let dotProgram = new Program("valid/stats.txt");
+        let dotProgram = new Program("valid/statsEverything.txt");
         let output = dotProgram.parse();
         // console.log(output);
         output.symbolTable.table.forEach((value: Map<string, number>, key: string) => {

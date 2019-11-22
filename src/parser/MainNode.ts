@@ -6,6 +6,7 @@ import AuthorNode from "./AuthorNode";
 import SymbolTable from "./SymbolTable";
 import {Node} from "./Node";
 import * as fs from "fs";
+import TopContributors from "./TopContributors";
 
 export default class MainNode extends Node {
 
@@ -14,7 +15,7 @@ export default class MainNode extends Node {
         super();
     }
 
-    public parse(context: Tokenizer, symbolTable: SymbolTable) {
+    public parse(context: Tokenizer, symbolTable: SymbolTable, topContributors: Map<string, number>) {
         let nodes: Array<Node> = [];
 
         while (context.hasNext()) {
@@ -22,13 +23,18 @@ export default class MainNode extends Node {
             switch (nextToken) {
                 case Tokens.ALL:
                     let fileNode = new FileNode();
-                    fileNode.parse(context, symbolTable);
+                    fileNode.parse(context, symbolTable, topContributors);
                     nodes.push(fileNode);
                     break;
                 case Tokens.AUTHOR:
                     let authorNode = new AuthorNode();
-                    authorNode.parse(context, symbolTable);
+                    authorNode.parse(context, symbolTable, topContributors);
                     nodes.push(authorNode);
+                    break;
+                case Tokens.NUMBER:
+                    let topContributorsNode = new TopContributors();
+                    topContributorsNode.parse(context, symbolTable, topContributors);
+                    nodes.push(topContributorsNode);
                     break;
                 default:
                     throw new ParserError("Unrecognizable token: ${nextToken}");

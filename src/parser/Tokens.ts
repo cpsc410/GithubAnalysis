@@ -21,6 +21,8 @@ export default class Tokens {
 
     public static EACH = "each";
 
+    public static OTHERAUTHOR = "author:"
+
     public static AUTHOR = "Author:";
 
     public static TOTAL = "Total:";

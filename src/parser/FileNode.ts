@@ -16,27 +16,27 @@ export default class FileNode extends Node {
         this.file = new FileName();
     }
 
-    public parse(context: Tokenizer, symbolTable: SymbolTable) {
+    public parse(context: Tokenizer, symbolTable: SymbolTable, topContributors: Map<string, number>) {
         // let token = context.pop();
         let currentLine = context.getLine();
 
         //Check the beginning of the expression
-        this.expresionCheck(context, symbolTable);
+        this.expressionCheck(context, symbolTable);
 
         //Adds all the file names and creates an empty map for the value
         while(!context.top().match(Tokens.AUTHOR)){
             let token = context.pop();
             if (token.match(Tokens.IDENTIFIER)) {
                 let innerMap: Map<string, number> = new Map();
-                let key  = token.substring(2);
-                symbolTable.set(key, innerMap);
+                // let key  = token.substring(2);
+                symbolTable.set(token, innerMap);
             }
         }
 
     }
 
 
-    private expresionCheck(context: Tokenizer, symbolTable: SymbolTable) {
+    private expressionCheck(context: Tokenizer, symbolTable: SymbolTable) {
         for (let exp of this.expression) {
             let token = context.pop();
 

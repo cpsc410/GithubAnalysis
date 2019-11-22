@@ -17,7 +17,7 @@ export default class AuthorNode extends Node {
         this.author = new Author();
     }
 
-    public parse(context: Tokenizer, symbolTable: SymbolTable) {
+    public parse(context: Tokenizer, symbolTable: SymbolTable, topContributors: Map<string, number>) {
         let currentLine = context.getLine();
 
         //Check the beginning of the expression
@@ -55,7 +55,9 @@ export default class AuthorNode extends Node {
                         curr += added;
                         map.set(this.author.name, curr);
                     } else{
-                        map.set(this.author.name, added);
+                        if(topContributors.has(this.author.name)){
+                            map.set(this.author.name, added);
+                        }
                     }
                 }
             }
@@ -71,8 +73,10 @@ export default class AuthorNode extends Node {
 
         //This gets rid of Total # # in the txt, subject to change depending on analysis
         context.pop();
-        context.pop();
-        context.pop();
+        if(!context.top().match(Tokens.AUTHOR)){
+            context.pop();
+            context.pop();
+        }
     }
 
 

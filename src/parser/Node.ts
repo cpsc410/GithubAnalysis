@@ -9,7 +9,7 @@ export abstract class Node {
 
     abstract compile(symbolTable: SymbolTable);
 
-    abstract parse(context: Tokenizer, symbolTable: SymbolTable);
+    abstract parse(context: Tokenizer, symbolTable: SymbolTable, topContributors: Map<string, number>);
 
 
     constructor() {

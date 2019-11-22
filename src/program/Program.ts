@@ -11,6 +11,7 @@ export class Program implements IProgram {
     source: string;
     ast: Node;
     symbolTable: SymbolTable;
+    topContributors: Map<string, number>;
 
     constructor(source: string) {
         this.source = source;
@@ -21,7 +22,8 @@ export class Program implements IProgram {
             let ctx = new Tokenizer(this.source);
             let node = new MainNode();
             this.symbolTable = new SymbolTable();
-            node.parse(ctx, this.symbolTable);
+            this.topContributors = new Map();
+            node.parse(ctx, this.symbolTable, this.topContributors);
             this.ast = node.root();
 
             // this.symbolTable = new SymbolTable();
