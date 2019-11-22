@@ -1,0 +1,152 @@
+
+All the code files: 
+
+
+Number of commits for each author: 
+     8	Ceylin Ozdemir
+     2	Cyrielle Meyrueix
+     1	ceylino
+
+Author: Ceylin
+Number of lines
+Added | Deleted | File  Modified
+0	9	resources/valid/output/FidoBiff.dot
+0	9	resources/valid/output/FooBar.dot
+0	17	resources/valid/output/LifeUniverseAndEverythingElse.dot
+0	9	resources/valid/output/sample.dot
+0	46	src/dsl/OutputWriter.ts
+4	3	src/main.ts
+0	1	src/parser/AuthorNode.ts
+1	4	src/parser/FileNode.ts
+28	26	src/parser/MainNode.ts
+0	0	src/{dsl => program}/IProgram.ts
+1	35	src/{dsl/DotProgram.ts => program/Program.ts}
+0	2	src/{dsl => program}/ProgramOutput.ts
+0	75	test/dsl/DotProgram.test.ts
+7	11	test/parser/Parser.test.ts
+0	30	test/parser/SymbolTable.test.ts
+0	0	resources/build/.gitkeep
+0	9	resources/build/target_sample.dot
+0	5	resources/grammarsamples/grammar.txt
+0	3	resources/invalid/incomplete.shape.missing.please.tdot
+0	3	resources/invalid/incomplete.shape.missing.shape.tdot
+0	3	resources/invalid/missing.circle.tdot
+0	3	resources/invalid/missing.square.tdot
+0	3	resources/invalid/non.valid.shape.tdot
+0	3	resources/invalid/redeclaration.circle.tdot
+0	3	resources/invalid/redeclaration.square.tdot
+0	9	resources/my_target.dot
+0	5	resources/target.dot
+0	3	resources/valid/FidoBiff.tdot
+0	3	resources/valid/FooBar.tdot
+0	8	resources/valid/LifeUniverseAndEverythingElse.tdot
+0	3	resources/valid/sample.tdot
+0	4	resources/valid/simple.tdot
+1	2	src/dsl/DotProgram.ts
+0	0	src/errors/TransformationException.ts
+1	1	src/main.ts
+0	1	src/parser/FileNode.ts
+24	4	src/parser/MainNode.ts
+1	1	src/parser/Node.ts
+9	2	test/parser/Parser.test.ts
+30	30	test/parser/SymbolTable.test.ts
+8	31	gitStats.sh
+298	95	stats.txt
+19	22	gitStats.sh
+183	0	stats.txt
+17	13	gitStats.sh
+38	1	gitStats.sh
+38	1	gitStats.sh
+23	0	gitStats.sh
+Total:
+731 551
+
+List of unique files modified by Ceylin: 
+
+
+Author: Cyrielle
+Number of lines
+Added | Deleted | File  Modified
+280	0	resources/valid/stats.txt
+0	47	src/ast/AstVisitor.ts
+9	0	src/ast/Author.ts
+0	23	src/ast/Edge.ts
+8	0	src/ast/FileName.ts
+0	15	src/ast/Shape.ts
+13	11	src/dsl/DotProgram.ts
+2	0	src/main.ts
+102	0	src/parser/AuthorNode.ts
+0	65	src/parser/DigraphNode.ts
+0	44	src/parser/EdgeNode.ts
+64	0	src/parser/FileNode.ts
+60	0	src/parser/MainNode.ts
+3	1	src/parser/Node.ts
+0	43	src/parser/ShapeNode.ts
+15	12	src/parser/SymbolTable.ts
+1	1	src/parser/Tokenizer.ts
+20	9	src/parser/Tokens.ts
+2	108	stats.txt
+75	75	test/dsl/DotProgram.test.ts
+5	5	test/parser/Parser.test.ts
+2	2	test/parser/SymbolTable.test.ts
+30	0	package.json
+0	0	resources/build/.gitkeep
+9	0	resources/build/target_sample.dot
+5	0	resources/grammarsamples/grammar.txt
+3	0	resources/invalid/incomplete.shape.missing.identifier.tdot
+3	0	resources/invalid/incomplete.shape.missing.please.tdot
+3	0	resources/invalid/incomplete.shape.missing.shape.tdot
+3	0	resources/invalid/missing.circle.tdot
+3	0	resources/invalid/missing.square.tdot
+3	0	resources/invalid/non.valid.shape.tdot
+3	0	resources/invalid/redeclaration.circle.tdot
+3	0	resources/invalid/redeclaration.square.tdot
+9	0	resources/my_target.dot
+5	0	resources/target.dot
+3	0	resources/valid/FidoBiff.tdot
+3	0	resources/valid/FooBar.tdot
+8	0	resources/valid/LifeUniverseAndEverythingElse.tdot
+9	0	resources/valid/output/FidoBiff.dot
+9	0	resources/valid/output/FooBar.dot
+17	0	resources/valid/output/LifeUniverseAndEverythingElse.dot
+9	0	resources/valid/output/sample.dot
+3	0	resources/valid/sample.tdot
+4	0	resources/valid/simple.tdot
+3	0	sample.tdot
+47	0	src/ast/AstVisitor.ts
+23	0	src/ast/Edge.ts
+15	0	src/ast/Shape.ts
+93	0	src/dsl/DotProgram.ts
+9	0	src/dsl/IProgram.ts
+46	0	src/dsl/OutputWriter.ts
+24	0	src/dsl/ProgramOutput.ts
+5	0	src/errors/CompileError.ts
+5	0	src/errors/ParserError.ts
+0	0	src/errors/TransformationException.ts
+5	0	src/main.ts
+65	0	src/parser/DigraphNode.ts
+44	0	src/parser/EdgeNode.ts
+24	0	src/parser/Node.ts
+43	0	src/parser/ShapeNode.ts
+31	0	src/parser/SymbolTable.ts
+65	0	src/parser/Tokenizer.ts
+20	0	src/parser/Tokens.ts
+1	1	stats.txt
+75	0	test/dsl/DotProgram.test.ts
+46	0	test/parser/Parser.test.ts
+30	0	test/parser/SymbolTable.test.ts
+Total:
+1527 462
+
+List of unique files modified by Cyrielle: 
+
+
+Author: ceylino
+Number of lines
+Added | Deleted | File  Modified
+2	0	README.md
+Total:
+2 0
+
+List of unique files modified by ceylino: 
+
