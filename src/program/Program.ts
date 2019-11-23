@@ -12,9 +12,11 @@ export class Program implements IProgram {
     ast: Node;
     symbolTable: SymbolTable;
     topContributors: Map<string, number>;
+    flags: Object;
 
-    constructor(source: string) {
+    constructor(source: string, flag: Object) {
         this.source = source;
+        this.flags = flag;
     }
 
     public parse(): ProgramOutput {

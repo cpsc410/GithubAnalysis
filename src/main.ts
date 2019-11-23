@@ -38,7 +38,7 @@ const cli = meow(`
     }
 });
 
-let programInstance = new Program("valid/statsEverything.txt");
+let programInstance = new Program("valid/statsEverything.txt", cli.flags);
 programInstance.parse();
 programInstance.compile();
 console.log(cli.flags);
