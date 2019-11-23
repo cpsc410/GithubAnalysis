@@ -39,12 +39,12 @@ const cli = meow(`
 });
 
 let flagsInstance = new Flags(cli.flags.languageSpec, cli.flags.commitCont, cli.flags.netEffect, cli.flags.fileCont);
-let programInstance = new Program("valid/statsEverything.txt");
+let programInstance = new Program("valid/statsEverything.txt", flagsInstance);
 programInstance.parse();
 programInstance.compile();
-console.log(cli.flags);
-console.log(flagsInstance.getFlagLanguageSpec());
-console.log(flagsInstance.getFlagCommitCont());
-console.log(flagsInstance.getFlagNetEffect());
-console.log(flagsInstance.getFlagFileCont());
+// console.log(cli.flags);
+// console.log(flagsInstance.getFlagLanguageSpec());
+// console.log(flagsInstance.getFlagCommitCont());
+// console.log(flagsInstance.getFlagNetEffect());
+// console.log(flagsInstance.getFlagFileCont());
 

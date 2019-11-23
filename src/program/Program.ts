@@ -5,6 +5,7 @@ import Tokenizer from "../parser/Tokenizer";
 import {Node} from "../parser/Node";
 import SymbolTable from "../parser/SymbolTable";
 import MainNode from "../parser/MainNode";
+import {Flags} from "./Flags";
 
 export class Program implements IProgram {
 
@@ -12,10 +13,11 @@ export class Program implements IProgram {
     ast: Node;
     symbolTable: SymbolTable;
     topContributors: Map<string, number>;
-    // flags: {};
+    flags: Flags;
 
-    constructor(source: string) {
+    constructor(source: string, flag: Flags) {
         this.source = source;
+        this.flags = flag;
     }
 
     public parse(): ProgramOutput {
@@ -24,7 +26,7 @@ export class Program implements IProgram {
             let node = new MainNode();
             this.symbolTable = new SymbolTable();
             this.topContributors = new Map();
-            node.parse(ctx, this.symbolTable, this.topContributors);
+            node.parse(ctx, this.symbolTable, this.topContributors, this.flags);
             this.ast = node.root();
 
             // this.symbolTable = new SymbolTable();
@@ -50,7 +52,7 @@ export class Program implements IProgram {
                 });
                 return parseOutput;
             }
-            this.ast.compile(this.symbolTable);
+            this.ast.compile(this.symbolTable, this.flags);
 
             let output = new ProgramOutput(ProgramOutputStatus.SUCCESS, this.ast, this.symbolTable, []);
 

@@ -7,6 +7,7 @@ import SymbolTable from "./SymbolTable";
 import {Node} from "./Node";
 import * as fs from "fs";
 import TopContributors from "./TopContributors";
+import {Flags} from "../program/Flags";
 
 export default class MainNode extends Node {
 
@@ -15,7 +16,7 @@ export default class MainNode extends Node {
         super();
     }
 
-    public parse(context: Tokenizer, symbolTable: SymbolTable, topContributors: Map<string, number>) {
+    public parse(context: Tokenizer, symbolTable: SymbolTable, topContributors: Map<string, number>, flags: Flags) {
         let nodes: Array<Node> = [];
 
         while (context.hasNext()) {
@@ -23,17 +24,17 @@ export default class MainNode extends Node {
             switch (nextToken) {
                 case Tokens.ALL:
                     let fileNode = new FileNode();
-                    fileNode.parse(context, symbolTable, topContributors);
+                    fileNode.parse(context, symbolTable, topContributors, flags);
                     nodes.push(fileNode);
                     break;
                 case Tokens.AUTHOR:
                     let authorNode = new AuthorNode();
-                    authorNode.parse(context, symbolTable, topContributors);
+                    authorNode.parse(context, symbolTable, topContributors, flags);
                     nodes.push(authorNode);
                     break;
                 case Tokens.NUMBER:
                     let topContributorsNode = new TopContributors();
-                    topContributorsNode.parse(context, symbolTable, topContributors);
+                    topContributorsNode.parse(context, symbolTable, topContributors, flags);
                     nodes.push(topContributorsNode);
                     break;
                 default:
@@ -43,7 +44,7 @@ export default class MainNode extends Node {
         console.log(symbolTable);
     }
 
-    public compile(symbolTable: SymbolTable) {
+    public compile(symbolTable: SymbolTable, flags: Flags) {
         type jsonType = {
             fileName: string;
             contributors: string;
@@ -80,7 +81,7 @@ export default class MainNode extends Node {
 
         console.log(jsonList);
 
-        fs.writeFile ("../resources/output/out.json", JSON.stringify(jsonList), function(err) {
+        fs.writeFile ("./resources/output/javaOut.json", JSON.stringify(jsonList), function(err) {
                 if (err) throw err;
                 console.log('\nThe list of all json objects has been saved in resources/output folder!');
             }

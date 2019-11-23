@@ -1,29 +1,37 @@
+
+Number of commits for each author:
+    22	Ben Henaghan (psybth)
+    11	UBC Student
+    10	Ceylin Ozdemir
+     7	Cyrielle Meyrueix
+     5	q6y0b
+
 All the code files:
-./cpsc410_ctrl_alt_elite/src/GifsCollages/GifCreator.java
-./cpsc410_ctrl_alt_elite/src/mainrun/OpenCvTest.java
-./cpsc410_ctrl_alt_elite/src/mainrun/Main.java
-./cpsc410_ctrl_alt_elite/src/libs/Node.java
-./cpsc410_ctrl_alt_elite/src/libs/NameCheckException.java
-./cpsc410_ctrl_alt_elite/src/libs/NoFileFoundException.java
-./cpsc410_ctrl_alt_elite/src/libs/Tokenizer.java
-./cpsc410_ctrl_alt_elite/src/libs/FilterNotFoundException.java
-./cpsc410_ctrl_alt_elite/src/ast/LOAD.java
-./cpsc410_ctrl_alt_elite/src/ast/STATEMENT.java
-./cpsc410_ctrl_alt_elite/src/ast/GIF.java
-./cpsc410_ctrl_alt_elite/src/ast/PHOTOS.java
-./cpsc410_ctrl_alt_elite/src/ast/SAVE.java
-./cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
-./cpsc410_ctrl_alt_elite/src/ast/COPY.java
-./cpsc410_ctrl_alt_elite/src/ast/FILTER.java
-./cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
-./cpsc410_ctrl_alt_elite/src/filter/FilterTest.java
-./cpsc410_ctrl_alt_elite/src/filter/Blur.java
-./cpsc410_ctrl_alt_elite/src/filter/Contrast.java
-./cpsc410_ctrl_alt_elite/src/filter/Brighten.java
-./cpsc410_ctrl_alt_elite/src/filter/Darken.java
-./cpsc410_ctrl_alt_elite/src/filter/Invert.java
-./cpsc410_ctrl_alt_elite/src/filter/Filter.java
-./cpsc410_ctrl_alt_elite/src/filter/Sharpen.java
+cpsc410_ctrl_alt_elite/src/GifsCollages/GifCreator.java
+cpsc410_ctrl_alt_elite/src/mainrun/OpenCvTest.java
+cpsc410_ctrl_alt_elite/src/mainrun/Main.java
+cpsc410_ctrl_alt_elite/src/libs/Node.java
+cpsc410_ctrl_alt_elite/src/libs/NameCheckException.java
+cpsc410_ctrl_alt_elite/src/libs/NoFileFoundException.java
+cpsc410_ctrl_alt_elite/src/libs/Tokenizer.java
+cpsc410_ctrl_alt_elite/src/libs/FilterNotFoundException.java
+cpsc410_ctrl_alt_elite/src/ast/LOAD.java
+cpsc410_ctrl_alt_elite/src/ast/STATEMENT.java
+cpsc410_ctrl_alt_elite/src/ast/GIF.java
+cpsc410_ctrl_alt_elite/src/ast/PHOTOS.java
+cpsc410_ctrl_alt_elite/src/ast/SAVE.java
+cpsc410_ctrl_alt_elite/src/ast/PROGRAM.java
+cpsc410_ctrl_alt_elite/src/ast/COPY.java
+cpsc410_ctrl_alt_elite/src/ast/FILTER.java
+cpsc410_ctrl_alt_elite/src/ast/COLLAGE.java
+cpsc410_ctrl_alt_elite/src/filter/FilterTest.java
+cpsc410_ctrl_alt_elite/src/filter/Blur.java
+cpsc410_ctrl_alt_elite/src/filter/Contrast.java
+cpsc410_ctrl_alt_elite/src/filter/Brighten.java
+cpsc410_ctrl_alt_elite/src/filter/Darken.java
+cpsc410_ctrl_alt_elite/src/filter/Invert.java
+cpsc410_ctrl_alt_elite/src/filter/Filter.java
+cpsc410_ctrl_alt_elite/src/filter/Sharpen.java
 
 Author: Ben
 1	1	cpsc410_ctrl_alt_elite/src/libs/FilterNotFoundException.java

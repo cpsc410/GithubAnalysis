@@ -4,11 +4,12 @@ import {ParserError} from '../errors/ParserError';
 import Tokens from "./Tokens";
 import FileName from "../ast/FileName";
 import SymbolTable from "./SymbolTable";
+import {Flags} from "../program/Flags";
+
 
 export default class FileNode extends Node {
 
     expression: string[] = [Tokens.ALL, Tokens.THE, Tokens.CODE, Tokens.FILES];
-
     file: FileName;
 
     constructor() {
@@ -16,12 +17,14 @@ export default class FileNode extends Node {
         this.file = new FileName();
     }
 
-    public parse(context: Tokenizer, symbolTable: SymbolTable, topContributors: Map<string, number>) {
+    public parse(context: Tokenizer, symbolTable: SymbolTable, topContributors: Map<string, number>, flags: Flags) {
         // let token = context.pop();
         let currentLine = context.getLine();
 
         //Check the beginning of the expression
         this.expressionCheck(context, symbolTable);
+        // let languageSpec = flags.languageSpec;
+        // flags.
 
         //Adds all the file names and creates an empty map for the value
         while(!context.top().match(Tokens.AUTHOR)){

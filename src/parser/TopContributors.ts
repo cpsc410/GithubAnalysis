@@ -5,6 +5,7 @@ import Tokens from "./Tokens";
 import MainNode from "./MainNode";
 import SymbolTable from "./SymbolTable";
 import Author from "../ast/Author";
+import {Flags} from "../program/Flags";
 
 export default class TopContributors extends Node {
 
@@ -14,7 +15,7 @@ export default class TopContributors extends Node {
         super();
     }
 
-    public parse(context: Tokenizer, symbolTable: SymbolTable, topContributors: Map<string, number>) {
+    public parse(context: Tokenizer, symbolTable: SymbolTable, topContributors: Map<string, number>, flags: Flags) {
         //Check the beginning of the expression
         this.expressionCheck(context);
 

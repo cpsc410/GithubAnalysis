@@ -5,6 +5,7 @@ import Tokens from "./Tokens";
 import Author from "../ast/Author";
 import MainNode from "./MainNode";
 import SymbolTable from "./SymbolTable";
+import {Flags} from "../program/Flags";
 
 export default class AuthorNode extends Node {
 
@@ -17,7 +18,7 @@ export default class AuthorNode extends Node {
         this.author = new Author();
     }
 
-    public parse(context: Tokenizer, symbolTable: SymbolTable, topContributors: Map<string, number>) {
+    public parse(context: Tokenizer, symbolTable: SymbolTable, topContributors: Map<string, number>, flags: Flags) {
         let currentLine = context.getLine();
 
         //Check the beginning of the expression
