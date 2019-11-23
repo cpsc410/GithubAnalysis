@@ -23,8 +23,15 @@ describe('Should be able to parse the GitHub stats', () => {
         expect(output.status).to.be.equal(ProgramOutputStatus.SUCCESS)
     });
 
-    it('should parse file valid simple input', async () => {
-        let dotProgram = new Program("valid/stats.txt");
+    it('should parse and create json file valid simple input', async () => {
+        let dotProgram = new Program("valid/statsEverything.txt");
+        let output = dotProgram.parse();
+        dotProgram.compile();
+        expect(output.status).to.be.equal(ProgramOutputStatus.SUCCESS)
+    });
+
+    it('should parse and create json file valid complicated input', async () => {
+        let dotProgram = new Program("valid/largeRepoAllStats.txt");
         let output = dotProgram.parse();
         dotProgram.compile();
         expect(output.status).to.be.equal(ProgramOutputStatus.SUCCESS)
