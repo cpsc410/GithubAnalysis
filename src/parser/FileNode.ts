@@ -36,6 +36,8 @@ export default class FileNode extends Node {
     }
 
 
+
+
     private expressionCheck(context: Tokenizer, symbolTable: SymbolTable) {
         for (let exp of this.expression) {
             let token = context.pop();
@@ -57,4 +59,8 @@ export default class FileNode extends Node {
     }
 
     public compile() {}
+
+    configurations(languageSpec: string, commitContribution: string, enumNetEffect: string, fileContribution: string): string {
+        return "";
+    }
 }

@@ -101,5 +101,9 @@ export default class AuthorNode extends Node {
         // writer.write(this.edge.toDigraph());
     }
 
+    configurations(languageSpec: string, commitContribution: string, enumNetEffect: string, fileContribution: string): string {
+        return "";
+    }
+
 
 }
