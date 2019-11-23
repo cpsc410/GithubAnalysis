@@ -45,17 +45,17 @@ export default class MainNode extends Node {
     public compile(symbolTable: SymbolTable) {
         type jsonType = {
             fileName: string;
-            contributors: Map<string,number>;
+            contributors: string;
             topContributors: Array<string>;
         }
 
         let jsonList  = [];
         symbolTable.table.forEach((value: Map<string, number>, key: string) => {
             // console.log(key, value);
-
+            let contributorsMap = value;
             let json : jsonType = {
                 fileName : key,
-                contributors : value,
+                contributors : JSON.stringify(Array.from(value.entries())),
                 topContributors : []
             };
 
@@ -65,7 +65,7 @@ export default class MainNode extends Node {
             };
 
             // Outputs the sorted key, value pairs
-            let sortedContributors = Array.from(json.contributors.entries()).sort(sortDesFn);
+            let sortedContributors = Array.from(contributorsMap.entries()).sort(sortDesFn);
 
             // Adds the names of the sorted authors in topContributors list
             sortedContributors.forEach((value:[string, number]) => {
