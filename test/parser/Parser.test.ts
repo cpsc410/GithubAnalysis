@@ -16,8 +16,8 @@ describe('Should be able to parse the GitHub stats', () => {
     });
 
     it('should parse file valid input', async () => {
-        let flag = new Flags("java", "5", "added", "3");
-        let dotProgram = new Program("valid/stats.txt", flag);
+        let flag = new Flags("java", "3", "sum", "3");
+        let dotProgram = new Program("valid/statsEverything.txt", flag);
         let output = dotProgram.parse();
         // console.log(output);
         output.symbolTable.table.forEach((value: Map<string, number>, key: string) => {
@@ -28,7 +28,7 @@ describe('Should be able to parse the GitHub stats', () => {
 
     it('should parse and create json file valid simple input', async () => {
         let flag = new Flags("java", "5", "added", "3");
-        let dotProgram = new Program("valid/stats.txt", flag);
+        let dotProgram = new Program("valid/statsEverything.txt", flag);
         let output = dotProgram.parse();
         dotProgram.compile();
         expect(output.status).to.be.equal(ProgramOutputStatus.SUCCESS)

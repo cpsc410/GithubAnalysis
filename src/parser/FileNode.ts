@@ -23,8 +23,7 @@ export default class FileNode extends Node {
 
         //Check the beginning of the expression
         this.expressionCheck(context, symbolTable);
-        // let languageSpec = flags.languageSpec;
-        // flags.
+        let languageSpec = flags.getFlagLanguageSpec();
 
         //Adds all the file names and creates an empty map for the value
         while(!context.top().match(Tokens.AUTHOR)){
@@ -32,7 +31,13 @@ export default class FileNode extends Node {
             if (token.match(Tokens.IDENTIFIER)) {
                 let innerMap: Map<string, number> = new Map();
                 // let key  = token.substring(2);
-                symbolTable.set(token, innerMap);
+                if(languageSpec.match("all")){
+                    symbolTable.set(token, innerMap);
+                } else {
+                    if (token.endsWith(languageSpec)) {
+                        symbolTable.set(token, innerMap);
+                    }
+                }
             }
         }
 

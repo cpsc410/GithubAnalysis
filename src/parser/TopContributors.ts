@@ -20,7 +20,8 @@ export default class TopContributors extends Node {
         this.expressionCheck(context);
 
 
-        //Stop at 10
+        let maxContributors = parseInt(flags.getFlagCommitCont());
+        //Stop at maxContributors
         let countContributors = 0;
         //Count keeps track of which token is being processed added, delete, or file name
         let countForParsing: number = 0;
@@ -33,7 +34,7 @@ export default class TopContributors extends Node {
                 added += parseInt(token);
                 countForParsing++;
             } else {
-                if (token.match(Tokens.IDENTIFIER) && countContributors != 10) {
+                if (token.match(Tokens.IDENTIFIER) && countContributors != maxContributors) {
                     topContributors.set(token, added);
                     countContributors++;
                     }
