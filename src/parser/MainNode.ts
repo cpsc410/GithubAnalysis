@@ -40,6 +40,7 @@ export default class MainNode extends Node {
                     throw new ParserError("Unrecognizable token: ${nextToken}");
             }
         }
+        console.log(symbolTable);
     }
 
     public compile(symbolTable: SymbolTable) {
@@ -79,7 +80,7 @@ export default class MainNode extends Node {
 
         console.log(jsonList);
 
-        fs.writeFile ("resources/output/out.json", JSON.stringify(jsonList), function(err) {
+        fs.writeFile ("../resources/output/out.json", JSON.stringify(jsonList), function(err) {
                 if (err) throw err;
                 console.log('\nThe list of all json objects has been saved in resources/output folder!');
             }
