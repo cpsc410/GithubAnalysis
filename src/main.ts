@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-import SymbolTable from "./parser/SymbolTable";
-import MainNode from "./parser/MainNode";
 import {Program} from "./program/Program";
+import {Flags} from "./program/Flags";
 const meow = require('meow');
 
 const cli = meow(`
@@ -18,6 +17,7 @@ const cli = meow(`
     flags: {
         languageSpec: {
             type: 'string',
+            default: 'all',
             alias: 'l'
         },
         commitCont: {
@@ -38,7 +38,13 @@ const cli = meow(`
     }
 });
 
-let programInstance = new Program("valid/statsEverything.txt", cli.flags);
+let flagsInstance = new Flags(cli.flags.languageSpec, cli.flags.commitCont, cli.flags.netEffect, cli.flags.fileCont);
+let programInstance = new Program("valid/statsEverything.txt");
 programInstance.parse();
 programInstance.compile();
 console.log(cli.flags);
+console.log(flagsInstance.getFlagLanguageSpec());
+console.log(flagsInstance.getFlagCommitCont());
+console.log(flagsInstance.getFlagNetEffect());
+console.log(flagsInstance.getFlagFileCont());
+
