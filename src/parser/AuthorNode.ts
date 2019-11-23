@@ -23,6 +23,7 @@ export default class AuthorNode extends Node {
 
         //Check the beginning of the expression
         this.expressionCheck(context);
+        let netEffect = flags.getFlagNetEffect();
 
         //Count keeps track of which token is being processed added, delete, or file name
         let count: number = 0;
@@ -51,13 +52,23 @@ export default class AuthorNode extends Node {
                     }
                     let map = symbolTable.get(token);
 
+                    //Configuration option handling
+                    let operator: number;
+                    if (netEffect.match("added")){
+                        operator = added;
+                    } else if(netEffect.match("deleted")){
+                        operator = deleted;
+                    } else if (netEffect.match("sum")){
+                        operator = added + deleted;
+                    }
+
                     if (map.has(this.author.name)){
                         let curr = map.get(this.author.name);
-                        curr += added;
+                        curr += operator;
                         map.set(this.author.name, curr);
                     } else{
                         if(topContributors.has(this.author.name)){
-                            map.set(this.author.name, added);
+                            map.set(this.author.name, operator);
                         }
                     }
                 }
