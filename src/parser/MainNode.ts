@@ -93,8 +93,5 @@ export default class MainNode extends Node {
         return this;
     }
 
-    configurations(languageSpec: string, commitContribution: string, enumNetEffect: string, fileContribution: string): string {
-        return "";
-    }
 
 }

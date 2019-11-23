@@ -7,7 +7,7 @@ import SymbolTable from "./SymbolTable";
 
 export default class FileNode extends Node {
 
-    expression: string[] = [Tokens.ALL, Tokens.THE, Tokens.CODE, Tokens.FILES, Tokens.IDENTIFIER];
+    expression: string[] = [Tokens.ALL, Tokens.THE, Tokens.CODE, Tokens.FILES];
 
     file: FileName;
 
@@ -49,18 +49,15 @@ export default class FileNode extends Node {
                 throw new ParserError("Invalid token at line ${currentLine}. Parser was expecting: [${exp}] and received: [${token}] instead");
             }
 
-            if (exp == Tokens.IDENTIFIER && token.match(Tokens.IDENTIFIER)) {
-                let innerMap: Map<string, number> = new Map();
-                token.substr(2);
-                symbolTable.set(token, innerMap);
-            }
+            // if (exp == Tokens.IDENTIFIER && token.match(Tokens.IDENTIFIER)) {
+            //     let innerMap: Map<string, number> = new Map();
+            //     token.substr(2);
+            //     symbolTable.set(token, innerMap);
+            // }
             // token = context.pop();
         }
     }
 
     public compile() {}
 
-    configurations(languageSpec: string, commitContribution: string, enumNetEffect: string, fileContribution: string): string {
-        return "";
-    }
 }

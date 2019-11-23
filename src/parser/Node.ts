@@ -11,7 +11,7 @@ export abstract class Node {
 
     abstract parse(context: Tokenizer, symbolTable: SymbolTable, topContributors: Map<string, number>);
 
-    abstract configurations(languageSpec: string, commitContribution: string, enumNetEffect: string, fileContribution: string): string;
+    // abstract configurations(languageSpec: string, commitContribution: string, enumNetEffect: string, fileContribution: string): string;
 
     constructor() {
         this.children = [];

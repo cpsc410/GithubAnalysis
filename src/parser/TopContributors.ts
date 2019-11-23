@@ -62,10 +62,4 @@ export default class TopContributors extends Node {
     compile(symbolTable: SymbolTable) {
     }
 
-    configurations(languageSpec: string, commitContribution: string, enumNetEffect: string, fileContribution: string): string {
-        return "";
-    }
-
-
-
 }
