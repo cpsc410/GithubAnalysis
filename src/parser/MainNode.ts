@@ -11,7 +11,6 @@ import {Flags} from "../program/Flags";
 
 export default class MainNode extends Node {
 
-
     constructor() {
         super();
     }
@@ -51,6 +50,8 @@ export default class MainNode extends Node {
             topContributors: Array<string>;
         }
 
+        let numFileCont : number = parseInt(flags.getFlagFileCont());
+        console.log("Number of top contributors specified: " + numFileCont);
         let jsonList  = [];
         symbolTable.table.forEach((value: Map<string, number>, key: string) => {
             // console.log(key, value);
@@ -69,10 +70,14 @@ export default class MainNode extends Node {
             // Outputs the sorted key, value pairs
             let sortedContributors = Array.from(contributorsMap.entries()).sort(sortDesFn);
 
-            // Adds the names of the sorted authors in topContributors list
-            sortedContributors.forEach((value:[string, number]) => {
-                json.topContributors.push(value[0]);
 
+            // Adds the names of the sorted authors in topContributors list
+            let cnt = 0;
+            sortedContributors.forEach((value:[string, number]) => {
+                if (cnt < numFileCont) {
+                    json.topContributors.push(value[0]);
+                    cnt++;
+                }
             });
 
             // console.log(json);
@@ -81,7 +86,7 @@ export default class MainNode extends Node {
 
         console.log(jsonList);
 
-        fs.writeFile ("./resources/output/javaOut.json", JSON.stringify(jsonList), function(err) {
+        fs.writeFile ("../resources/output/javaOut.json", JSON.stringify(jsonList), function(err) {
                 if (err) throw err;
                 console.log('\nThe list of all json objects has been saved in resources/output folder!');
             }
