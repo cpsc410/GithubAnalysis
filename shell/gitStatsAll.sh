@@ -6,7 +6,7 @@ outputName="$1"
 # params to change
 currentBranch="master" #primary language extention used in repo
 echo -e "\nNumber of commits for each author: " > "$outputName"
-echo "" | git shortlog --numbered --summary --no-merges >> "$outputName"
+git shortlog HEAD --numbered --summary --no-merges >> "$outputName"
 
 codeFiles=$(git ls-tree -r "$currentBranch" --name-only)
 echo -e "\nAll the code files: " >> "$outputName"

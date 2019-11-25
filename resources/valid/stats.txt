@@ -10,7 +10,6 @@ buildSub
 installSub
 package-lock.json
 package.json
-run
 run.js
 viz_metro
 
@@ -20,6 +19,17 @@ Total:
 2 0
 
 Author: b3x0b
+1	1	package-lock.json
+1	1	package.json
+1	1	viz_metro
+1	1	GithubAnalysis
+1	1	package.json
+1	1	GithubAnalysis
+1	1	package.json
+2	1	package.json
+1	1	package.json
+0	12	run
+0	7	run.js
 1	1	GithubAnalysis
 118	2	package-lock.json
 5	2	package.json
@@ -36,4 +46,4 @@ Author: b3x0b
 1	0	GithubAnalysis
 1	0	viz_metro
 Total:
-224 10
+234 38
