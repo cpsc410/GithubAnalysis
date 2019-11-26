@@ -50,15 +50,15 @@ tsc main.ts
 An example of its usage would look as follows:
       
 ```
-main.js --l java --c 13 --n sum --f 7
-main.js --l all --c 5 --n added --f 3
+./main.js --l java --c 13 --n sum --f 7
+./main.js --l all --c 5 --n added --f 3
 //with no specified arguments the call will default to:
-main.js all 10 added 10
+./main.js all 10 added 10
 ```
 To see all of these instructions in terminal running
       
 ```
-main --help
+./main --help
 ```
 will show all its usage.
       
