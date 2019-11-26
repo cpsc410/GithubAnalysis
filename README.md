@@ -58,7 +58,7 @@ main.js all 10 added 10
 To see all of these instructions in terminal running
       
 ```
-./main --help
+main --help
 ```
 will show all its usage.
       
